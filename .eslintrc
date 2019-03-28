@@ -1,0 +1,86 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "document": false,
+    "expect": false,
+    "navigator": false,
+    "sinon": false,
+    "window": false,
+    "__DEV__": true,
+    "__PROD__": true,
+    "__DEBUG__": true,
+    "__COVERAGE__": true,
+    "__BASENAME__": true,
+    "__ENV__": false
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "semi": [2, "always"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ],
+    "object-curly-spacing": [2, "never"],
+    "function-paren-newline":[2, "consistent"],
+    "linebreak-style": 0,
+    "no-shadow": 2,
+    "arrow-body-style": 0,
+    "global-require": 1,
+    "max-len": [2, { 
+      "code": 80, 
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+      }],
+    "no-unused-expressions": [0, { "allowShortCircuit": true, "allowTernary": true } ],
+    "no-confusing-arrow": [1, {"allowParens": true}],
+    "no-unused-vars": [2, {"ignoreRestSiblings": true}],
+    "no-constant-condition": 2,
+    "no-underscore-dangle": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "react/no-typos": 1,
+    "react/destructuring-assignment": "always",
+    "react/require-default-props": 1,
+    "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
+    "react/forbid-prop-types": 2,
+    "react/no-unused-prop-types": 2,
+    "react/jsx-filename-extension": [2, {"extensions": [".js", ".jsx"]}],
+    "jsx-a11y/anchor-is-valid": [ 2, {
+      "components": [ "Link" ],
+      "specialLink": [ "to"],
+      "aspects": [ "noHref", "invalidHref", "preferButton" ]
+    }]
+  }
+}
