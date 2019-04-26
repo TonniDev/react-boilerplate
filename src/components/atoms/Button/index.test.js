@@ -2,6 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import mock from 'jest-mock';
 import expect from 'expect';
+import {beforeEach} from "../../../../private/storybook/facade";
 
 import {Button} from './index';
 import Icon from '../Icon';
@@ -11,13 +12,6 @@ const buttonText = 'Button';
 const iconType = 'alert';
 
 let component;
-
-describe('Button Snapshot', () => {
-  it('renders correctly', () => {
-    component = shallow(<Button onClick={clickFn}>{buttonText}</Button>);
-    expect(component).toMatchSnapshot();
-  });
-});
 
 export default describe('Button', () => {
   beforeEach(() => {
@@ -34,7 +28,7 @@ export default describe('Button', () => {
     expect(clickFn).toHaveBeenCalled();
   });
 
-  it('should render a icon if has icon prop', () => {
+  it('should render an icon if has icon prop', () => {
     component = shallow(
       <Button onClick={clickFn} icon={iconType}>{buttonText}</Button>
     );

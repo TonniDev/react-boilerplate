@@ -61,7 +61,7 @@ const StyledButton = styled.button`
 
         transition: all 0.2s ease-in-out;
         
-        border: 1px solid ${mixins.resolveColor(color, theme)}; 
+        border: 1px solid ${mixins.resolveColor(color, theme)};
 
         ${gradient && css`
           border-image: linear-gradient(${mixins.gradient('to right', theme.gradients[color])});
@@ -71,7 +71,7 @@ const StyledButton = styled.button`
 
 
       &:hover {
-        color: ${lighten(0.1, mixins.resolveColor(color, theme))};  
+        color: ${lighten(0.1, mixins.resolveColor(color, theme))};
 
         &:after {
           border-width: 3px;
@@ -81,7 +81,7 @@ const StyledButton = styled.button`
       }
 
       &:active {
-        color: ${darken(0.1, mixins.resolveColor(color, theme))};  
+        color: ${darken(0.1, mixins.resolveColor(color, theme))};
         
         &:after {
           border-color: ${darken(0.1, mixins.resolveColor(color, theme))};
@@ -95,7 +95,7 @@ const StyledButton = styled.button`
       ${gradient ? css`
         background: linear-gradient(${mixins.gradient('348.69deg', {0: '#f8562c', 35: '#f8562c', 100: '#e92555'})});
         background-size: 200% 100%;
-        transition: background-position 0.3 ease-in-out;
+        transition: background-position 0.3s ease-in-out;
 
         &:hover{
           background-position-x: 50%;

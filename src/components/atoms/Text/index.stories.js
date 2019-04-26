@@ -8,11 +8,19 @@ import {Text} from './index';
 
 // import './index.less';
 
+const info = () => `
+        description or documentation about my component, supports markdown
+ 
+          ~~~js
+          <Button>Click Here</Button>
+          ~~~
+`;
+
 storiesOf('Atoms/Text', module)
-  .add('Text component', withInfo('Sample Text with P tag')(() => {
+  .add('Text component', () => {
     const story = <Text className="atom__text" onClick={action('Text clicked')}>Sample Text</Text>;
 
     specs(() => Test(story));
 
     return story;
-  }));
+  }, {info: info()});

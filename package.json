@@ -10,8 +10,7 @@
     "build:prod": "npm update coi-minhaoi && npm run build:envConfig && ROOT_PATH=./ webpack --display-error-details --config webpack.config.js -p --mode production",
     "test": "node private/jest/test.js --env=jsdom",
     "test:watch": "npm test -- --watch",
-    "__test:coverage": "jest --coverage",
-    "test:coverage": "echo implementing",
+    "test:coverage": "jest --coverage",
     "coverage": "npm test -- --coverage",
     "storybook": "start-storybook -p 6009 -c private/storybook",
     "build-storybook": "build-storybook -c private/storybook"
@@ -31,7 +30,7 @@
       "<rootDir>/private/jest/polyfills.js"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/(build|docs|node_modules|private)/"
+      "<rootDir>/(build|docs|node_modules|private|test)/"
     ],
     "testEnvironment": "node",
     "cacheDirectory": "test/.cache",

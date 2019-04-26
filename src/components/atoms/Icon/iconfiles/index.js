@@ -48,7 +48,6 @@ export {loading} from './loading';
 export {localization_pin} from './localization_pin'; // eslint-disable-line
 export {lupa} from './lupa';
 export {lupa_thin} from './lupa-thin'; // eslint-disable-line
-export {minhaoi} from './minhaoi';
 export {mobile} from './mobile';
 export {money} from './money';
 export {oi} from './oi';

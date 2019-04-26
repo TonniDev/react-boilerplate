@@ -1,32 +1,6 @@
 import {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
 // import {config} from '../index';
-/*
-const simplonRegularEOT = '/minhaoi/home/assets/fonts/simplonbp-regular-webfont.eot';
-const simplonRegularWOFF = '/minhaoi/home/assets/fonts/simplonbp-regular-webfont.woff';
-const simplonRegularTTF = '/minhaoi/home/assets/fonts/simplonbp-regular-webfont.ttf';
-const simplonRegularSVG = '/minhaoi/home/assets/fonts/simplonbp-regular-webfont.svg';
-
-const simplonBoldEOT = '/minhaoi/home/assets/fonts/simplonbp-bold-webfont.eot';
-const simplonBoldWOFF = '/minhaoi/home/assets/fonts/simplonbp-bold-webfont.woff';
-const simplonBoldTTF = '/minhaoi/home/assets/fonts/simplonbp-bold-webfont.ttf';
-const simplonBoldSVG = '/minhaoi/home/assets/fonts/simplonbp-bold-webfont.svg';
-
-const simplonLightEOT = '/minhaoi/home/assets/fonts/simplonbp-light-webfont.eot';
-const simplonLightWOFF = '/minhaoi/home/assets/fonts/simplonbp-light-webfont.woff';
-const simplonLightTTF = '/minhaoi/home/assets/fonts/simplonbp-light-webfont.ttf';
-const simplonLightSVG = '/minhaoi/home/assets/fonts/simplonbp-light-webfont.svg';
-
-const simplonMediumEOT = '/minhaoi/home/assets/fonts/simplonbp-medium-webfont.eot';
-const simplonMediumWOFF = '/minhaoi/home/assets/fonts/simplonbp-medium-webfont.woff';
-const simplonMediumTTF = '/minhaoi/home/assets/fonts/simplonbp-medium-webfont.ttf';
-const simplonMediumSVG = '/minhaoi/home/assets/fonts/simplonbp-medium-webfont.svg';
-
-const simplonHeadlineEOT = '/minhaoi/home/assets/fonts/simplonoi-headline-webfont.eot';
-const simplonHeadlineWOFF = '/minhaoi/home/assets/fonts/simplonoi-headline-webfont.woff';
-const simplonHeadlineTTF = '/minhaoi/home/assets/fonts/simplonoi-headline-webfont.ttf';
-const simplonHeadlineSVG = '/minhaoi/home/assets/fonts/simplonoi-headline-webfont.svg';
-*/
 
 import simplonRegularEOT from '../../assets/fonts/simplonbp-regular-webfont.eot';
 import simplonRegularWOFF from '../../assets/fonts/simplonbp-regular-webfont.woff';
